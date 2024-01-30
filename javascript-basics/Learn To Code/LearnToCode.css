@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #25577A;
+}
+
+.styled-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: transparent;
+    text-shadow: 3px 3px 0 red;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(black, black);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;   
+    -webkit-text-stroke-color: black;   
+}

@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500);
+}
+
+#contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 20px;
+    border: 1px solid rgb(22, 68, 143);
+    background-color: #B8E3FF;
+} 
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    /* background-color: #007bff; */
+    background-color: #2d74ded0;
+
+    color: white;
+    border: none;
+    cursor: pointer;
+}

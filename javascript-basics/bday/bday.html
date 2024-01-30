@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bday.css">
+</head>
+<body>
+    <div id="ageCalculator">
+        <label for="birthDate">Enter your birth date:</label>
+        <input type="date" id="birthDate" />
+        <button id="calculateButton">Calculate Age</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const calculateButton = document.getElementById("calculateButton");
+        const birthDateInput = document.getElementById("birthDate");
+        const resultDiv = document.getElementById("result");
+
+        calculateButton.addEventListener("click", () => {
+        const birthDate = new Date(birthDateInput.value);
+        const currentDate = new Date();
+
+        const ageInMilliseconds = currentDate - birthDate;
+        const ageDate = new Date(ageInMilliseconds);
+
+        const years = ageDate.getUTCFullYear() - 1970;
+        const months = ageDate.getUTCMonth();
+        const days = ageDate.getUTCDate() - 1;
+
+        resultDiv.textContent = `Age: ${years} years, ${months} months, ${days} days`;});
+    </script>
+</body>
+</html>
