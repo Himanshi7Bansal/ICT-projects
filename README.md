@@ -1,2 +1,2 @@
 # ICT-projects
-My ICT internship profects on which I worked
+My ICT internship projects on which I worked
